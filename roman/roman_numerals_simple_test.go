@@ -3,13 +3,13 @@ package roman
 import "testing"
 
 var (
-	input    []string = []string{"I", "IV", "CXXV", "XLVII", "CDXCII"}
-	expected []int    = []int{1, 4, 125, 47, 492}
+	input    []int    = []int{1, 4, 6, 125, 47, 492}
+	expected []string = []string{"I", "IV", "VI", "CXXV", "XLVII", "CDXCII"}
 )
 
 func TestRomanToNumberSimple(t *testing.T) {
 	for i := range input {
-		result := ConvertRomanToDecimal(input[i])
+		result := ConvertDecimalToRoman(input[i])
 		if result != expected[i] {
 			t.Errorf("ERROR -> Input: %v | Output: %v | Expected: %v",
 				input[i], result, expected[i])
