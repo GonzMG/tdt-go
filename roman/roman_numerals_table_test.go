@@ -18,7 +18,7 @@ var testCases = []struct {
 
 func TestRomanToNumberTable(t *testing.T) {
 	for _, testCase := range testCases {
-		result := ConvertDecimalToRoman(testCase.inputDecimal)
+		result, _ := ConvertDecimalToRoman(testCase.inputDecimal)
 		if result != testCase.outputRoman {
 			t.Errorf("ERROR -> Input: %v | Output: %v | Expected: %v",
 				testCase.inputDecimal, result, testCase.outputRoman)
