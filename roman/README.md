@@ -16,7 +16,7 @@ The Roman numerals problem is very used to explain TDD, it consist in a function
 func ConvertDecimalToRoman(decimalNumber int) (string, error)
 ```
 
-Following the TDD process, the first step is create a failing test, so create a file `roman_numerals_simple_test.go` with the test. The input and the expected values of the test will be:
+Following the TDD process, the first step is create a failing test, so create a file `roman_numerals_simple_test.go` with the test. 
 
 ```
 var (
@@ -24,10 +24,7 @@ var (
 
     expected []string = []string{"I", "IV", "VI", "CXXV", "XLVII", "CDXCII"}
 )
-````
-The test function will iterate through the inputs, converting to roman and compare them with the expected values:
 
-```
 func TestRomanToNumberSimple(t *testing.T) {
     for i := range input {
         result, _ := ConvertDecimalToRoman(input[i])
