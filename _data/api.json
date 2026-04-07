@@ -1,0 +1,22 @@
+{
+  "name": "Example API",
+  "version": "1.0.0",
+  "baseUrl": "https://api.example.com",
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/health",
+      "description": "Service health check"
+    },
+    {
+      "method": "GET",
+      "path": "/items",
+      "description": "List items"
+    },
+    {
+      "method": "POST",
+      "path": "/items",
+      "description": "Create an item"
+    }
+  ]
+}
